@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --bg-light-color: #FFFFFF;
+    --bg-gray-color: #E5E5E5;
+    --bg-blue-color: #3C2DFF;
+    --btn-primary-color: #3C2DFF;
+    --btn-secondary-color: #000000;
+    --txt-black-color: #000000;
+    --txt-gray-dark-color: #4A5568;
+    --txt-gray-light-color: #718096;
+    --txt-white-color: #FFFFFF;
+    --txt-purple-color: #AD00FF;
+    --tag-purple-color: rgba(60, 45, 255, 0.69);
+    --tag-red-color: #FF0D0D;
+    --tag-green-color: #45C8A1;
+}
+
+body {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-items-center {
+    align-items: center;
+}
+
+.m-0 {
+    margin: 0px;
+}
+.p-0 {
+    padding: 0px;
+}
+
+.container {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
