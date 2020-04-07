@@ -79,6 +79,9 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
+.text-align-center {
+    text-align: center;
+}
 .uppercase {
     text-transform: uppercase;
 }
