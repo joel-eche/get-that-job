@@ -16,7 +16,7 @@
     grid-template-rows: 2fr 1fr;
 }
 .contact .first-contact h2{
-    margin: 0 0 8px 0;
+    margin: 0 0 7px 0;
     color: var(--txt-gray-light-color);
     font-size: 13px;
 }
