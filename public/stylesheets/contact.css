@@ -1,0 +1,92 @@
+.contact-section{
+    margin-top: 200px;
+    background-color: #f7fafc;
+    height: 571px;
+    justify-content: space-between;
+    padding-top:100px;
+}
+/*contact*/
+.contact hr{
+    display: none;
+    visibility: hidden;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+}
+.contact .first-contact h2{
+    margin: 0 0 8px 0;
+    color: var(--txt-gray-light-color);
+    font-size: 13px;
+}
+.contact .first-contact h1{
+    margin: 0;
+    font-size: 46px;
+    font-weight: bold;
+}
+.contact .first-contact p{
+    margin-top: 11px;
+    font-size: 15px;
+    font-weight: bold;  
+}
+.contact .second-contact p{
+    font-weight: normal;
+    font-size: 16px;
+}
+/*form*/
+.contact-section form input, .contact-section form textarea{
+    border-radius: 6px;
+    border: 1px solid #c9ccd4;
+    width: 450px; 
+    font-family: 'Nunito';
+    margin-bottom: 10px;
+}
+.contact-section form input{
+    height: 60px;
+    padding: 13px 24px;
+}
+.contact-section form textarea{
+    height: 150px;
+    padding: 13px 0 0 24px;
+}
+.fa-envelope{
+    font-size: 15px;
+    margin-right: 8px;
+}
+
+@media screen and (max-width:768px){
+    .contact-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 
+        "contact"
+        "form";
+        padding-top: 50px;
+        height: 620px;
+    }
+    .contact{
+        grid-area: contact;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact hr{
+        display: block;
+        visibility: visible;
+    }
+    .second-contact{
+        padding-top: 35px;
+        padding-left: 20px;
+    }
+    .form{
+        margin-top: 15px;
+        grid-area: form;
+        display: grid;
+        justify-items: center;
+    }
+    .contact-section form textarea{
+        height: 110px;
+    }
+
+}

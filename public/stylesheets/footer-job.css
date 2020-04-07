@@ -1,9 +1,7 @@
+
 .footer{
-    display: flex;
-    width: 100%;
     padding-top: 30px;
-    margin : 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Nunito';
 }
 .footer h3{
@@ -37,22 +35,26 @@ footer p{
     text-align: center;
     padding-top: 9px;
     margin: 0;
+    margin-bottom: 10px;
 }
 @media screen and (max-width:768px){
     .footer{
         display:grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr !important;
         grid-template-areas: 
-        "footer-job"
-        "footer-company"
-        "footer-support"
-        "footer-legal";
-        grid-row-gap: 10px;
-        justify-items: center;
+        "footer-job footer-company"
+        "footer-support footer-legal";
+        grid-row-gap: 20px;
+        grid-column-gap: 30px;
+    }
+    .footer-job, .footer-company, .footer-support, .footer-legal{
+        justify-self: center;
     }
     .footer-job{
         grid-area: footer-job;
         width: 132px;
+
     }
     .footer-company{
         grid-area: footer-company;
