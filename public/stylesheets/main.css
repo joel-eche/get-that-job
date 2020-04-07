@@ -44,6 +44,12 @@ body {
 .align-items-center {
     align-items: center;
 }
+.direction-row {
+    flex-direction: row;
+}
+.direction-column {
+    flex-direction: column;
+}
 
 .w-50-percent {
     width: 50%;
