@@ -32,6 +32,11 @@ body {
     font-style: normal;
 }
 
+.main {
+    width: 100%;
+    margin-top: 100px;
+}
+
 .flex {
     display: flex;
 }
