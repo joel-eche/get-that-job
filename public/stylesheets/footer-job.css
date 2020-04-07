@@ -1,0 +1,69 @@
+.footer{
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+    margin : 0 auto;
+    justify-content: space-around;
+    font-family: 'Nunito';
+}
+.footer h3{
+    color: var(--txt-black-color);
+    font-size: 18px;
+    margin: 0 0 7px 0;
+}
+.footer ul{
+    margin: 0;
+    padding: 0;
+}
+.footer ul li{
+    list-style: none;
+    margin-bottom: 7px;
+}
+.footer li a{
+    text-decoration: none;
+    color: var(--txt-gray-light-color);
+}
+.footer li:last-child a{
+    color: var(--txt-purple-color);
+}
+footer .line{
+    border-bottom: 1px solid rgba(193, 187, 187, 0.77);
+    width: 100%;
+    padding-top: 29px;
+}
+footer p{
+    color: var(--txt-gray-light-color);
+    font-size: 14px;
+    text-align: center;
+    padding-top: 9px;
+    margin: 0;
+}
+@media screen and (max-width:768px){
+    .footer{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "footer-job"
+        "footer-company"
+        "footer-support"
+        "footer-legal";
+        grid-row-gap: 10px;
+        justify-items: center;
+    }
+    .footer-job{
+        grid-area: footer-job;
+        width: 132px;
+    }
+    .footer-company{
+        grid-area: footer-company;
+        width: 132px;
+    }
+    .footer-support{
+        grid-area: footer-support;
+        width: 132px;
+    }
+    .footer-legal{
+        grid-area: footer-legal;
+        width: 132px;
+    }
+}

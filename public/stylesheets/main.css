@@ -9,6 +9,7 @@
     --bg-light-color: #FFFFFF;
     --bg-gray-color: #E5E5E5;
     --bg-blue-color: #3C2DFF;
+    --btn-undefined-color: #E5E5E5;
     --btn-primary-color: #3C2DFF;
     --btn-secondary-color: #000000;
     --txt-black-color: #000000;
@@ -16,6 +17,7 @@
     --txt-gray-light-color: #718096;
     --txt-white-color: #FFFFFF;
     --txt-purple-color: #AD00FF;
+    --tag-blue-color: #3C2DFF;
     --tag-purple-color: rgba(60, 45, 255, 0.69);
     --tag-red-color: #FF0D0D;
     --tag-green-color: #45C8A1;
@@ -23,9 +25,11 @@
 
 body {
     position: absolute;
+    width: 100%;
     margin: 0px;
     padding: 0px;
-    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
 }
 
 .flex {
@@ -52,4 +56,12 @@ body {
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.f-overpass {
+    font-family: 'Overpass', sans-serif;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
