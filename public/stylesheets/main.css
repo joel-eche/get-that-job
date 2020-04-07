@@ -45,6 +45,12 @@ body {
     align-items: center;
 }
 
+.w-50-percent {
+    width: 50%;
+}
+.w-100-percent {
+    width: 100%;
+}
 .m-0 {
     margin: 0px;
 }
