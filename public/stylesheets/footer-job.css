@@ -63,6 +63,6 @@ footer p{
     }
     .footer-legal{
         grid-area: footer-legal;
-        width: 132px;
+        width: 133px;
     }
 }
