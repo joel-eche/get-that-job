@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: var(--bg-light-color);
+    font-weight: bold;
+    color: var(--txt-black-color);
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    line-height: 33px;
+}
+.navbar-collapse {
+    height: 100%;
+}
+.navbar-items {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0px;
+    padding-left: 0px;
+    list-style: none;
+    font-size: 16px;
+    line-height: 22px;
+}
+.navbar-item {
+    margin-left: 20px;
+}
+.navbar-link {
+    height: 100%;
+    color: var(--txt-black-color);
+    text-decoration: none;
+}
