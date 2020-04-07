@@ -14,6 +14,7 @@
     line-height: 33px;
 }
 .navbar-collapse {
+    display: flex;
     height: 100%;
 }
 .navbar-items {
@@ -33,4 +34,25 @@
     height: 100%;
     color: var(--txt-black-color);
     text-decoration: none;
+}
+.navbar-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+    .navbar-collapse {
+        display: none;
+    }
+    .navbar-brand {
+        font-size: 18px;
+        line-height: 33px;
+    }
+    .navbar-brand-logo{
+        width: 22px;
+    }
+    .navbar-menu-icon {
+        display: flex;
+        align-items: center;
+    }
 }
