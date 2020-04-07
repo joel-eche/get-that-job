@@ -54,7 +54,6 @@ footer p{
     .footer-job{
         grid-area: footer-job;
         width: 132px;
-
     }
     .footer-company{
         grid-area: footer-company;
