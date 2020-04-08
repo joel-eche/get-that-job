@@ -80,4 +80,12 @@
             </div>
         </div>
     </section>
+    <section class="flex direction-column">
+        <% for i in 0..7 do %> 
+            <%= erb :jobitem %> 
+        <% end %>
+        <div class="flex justify-center">
+            <button class="btn btn-primary uppercase">Load more</button>
+        </div>
+    </section>
 </main>
