@@ -9,6 +9,7 @@
     --bg-light-color: #FFFFFF;
     --bg-gray-color: #E5E5E5;
     --bg-blue-color: #3C2DFF;
+    --bg-lightblue-color: #F7FAFC;
     --btn-undefined-color: #E5E5E5;
     --btn-primary-color: #3C2DFF;
     --btn-secondary-color: #000000;
@@ -36,6 +37,7 @@ body {
 .main {
     width: 100%;
     margin-top: 100px;
+    background-color: var(--bg-lightblue-color);
 }
 
 .flex {
