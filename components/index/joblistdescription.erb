@@ -15,7 +15,7 @@
   <div class="job-list-description-small flex align-items-center">
     <div class="job-list-description-three flex direction-column">
       <% for i in 0..2 do %> 
-          <%= erb :jobitem %> 
+        <%= erb :"../components/jobs/jobitem" %>
       <% end %>
     </div>
   </div>

@@ -23,11 +23,11 @@
 <body>
 
 <!-- This will be on all pages -->
-<%= erb :navbar %>
+<%= erb :"../components/common/navbar" %>
 
 <%= yield %>
 
-<%= erb :footer %>
+<%= erb :"../components/common/footer" %>
 
 <script src="https://kit.fontawesome.com/35d6a5945d.js" crossorigin="anonymous"></script>
 </body>
