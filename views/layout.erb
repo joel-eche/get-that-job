@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="/stylesheets/footer-job.css">
   <link rel="stylesheet" href="/stylesheets/hero.css">
   <link rel="stylesheet" href="/stylesheets/testimonials.css">
+  <link rel="stylesheet" href="/stylesheets/sign-up-form.css">
   <link rel="stylesheet" href="/stylesheets/job-listing.css">
   <link rel="stylesheet" href="/stylesheets/job-detail.css">
   <link rel="stylesheet" href="/stylesheets/joblistdescription.css">
@@ -24,11 +25,11 @@
 <body>
 
 <!-- This will be on all pages -->
-<%= erb :navbar %>
+<%= erb :"../components/common/navbar" %>
 
 <%= yield %>
 
-<%= erb :footer %>
+<%= erb :"../components/common/footer" %>
 
 <script src="https://kit.fontawesome.com/35d6a5945d.js" crossorigin="anonymous"></script>
 </body>
