@@ -1,15 +1,11 @@
 .contact-section{
-    margin-top: 200px;
+    margin-top: 100px;
     background-color: #f7fafc;
     height: 571px;
     justify-content: space-between;
     padding-top:100px;
 }
 /*contact*/
-.contact hr{
-    display: none;
-    visibility: hidden;
-}
 .contact{
     display: grid;
     grid-template-columns: 1fr;
@@ -63,24 +59,16 @@
         grid-template-areas: 
         "contact"
         "form";
-        padding-top: 50px;
-        height: 620px;
+        padding-top: 30px;
+        height: 630px;
     }
     .contact{
         grid-area: contact;
-        display: flex;
-        justify-content: space-between;
-    }
-    .contact hr{
-        display: block;
-        visibility: visible;
-    }
-    .second-contact{
-        padding-top: 35px;
-        padding-left: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-self: center;
     }
     .form{
-        margin-top: 15px;
         grid-area: form;
         display: grid;
         justify-items: center;
@@ -88,5 +76,13 @@
     .contact-section form textarea{
         height: 110px;
     }
-
+    .contact-section form input, .contact-section form textarea{
+        width: 100%;
+    }
+    .form .btn-big{
+        height: 40px;
+        padding-top: 10px;
+        padding-left: 0px;
+        width: 100%;
+    }
 }

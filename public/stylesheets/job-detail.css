@@ -1,0 +1,188 @@
+.job-detail{
+    background-color: #f7fafc;
+    margin-top: 20px;/*borrar*/
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    height: 1450px;
+    grid-template-areas: 
+    "job-info able-card";
+}
+/*job info*/
+.job-info{
+    grid-area: job-info;
+    margin-top: 50px;
+}
+.job-info .more-jobs{
+    color: var(--tag-blue-color);
+}
+.job-info .more-jobs a{
+    text-decoration: none;
+}
+.posted p{
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+/*options*/
+.job-info .option{
+    margin-bottom: 25px;
+}
+.job-info .option ul{
+    padding-left: 0;
+    display: flex;
+}
+.job-info .option ul li{
+    list-style: none;
+    background-color: var(--btn-primary-color);
+    margin-right: 9px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: var(--txt-white-color);
+    font-size: 12px;
+}
+/*info*/
+.job-info .more-jobs a, p>span, p, li{
+    font-size: 16px;
+}
+h1{
+    font-size: 32px;
+    margin: 0;
+}
+h2{
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.job-detail .list{
+    padding-left: 20px;
+    margin-top: 5px;
+}
+/*button and share*/
+.btn-and-share{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.btn-and-share .btn{
+    display: block;
+    width: 191px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px 50px;
+    font-family: 'Nunito';
+}
+.btn-and-share .share{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    grid-column-gap: 10px;
+}
+.btn-and-share .share .icon{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.about-able  p{
+    margin-top: 10px;
+}
+
+/*able card*/
+.able-card{
+    grid-area: able-card;
+    justify-self: flex-end;
+    margin-top: 50px;
+    padding-top: 40px;
+    background-color: var(--bg-light-color);
+    width: 256px;
+    height: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.able-card .logo-able{
+    display: block;
+    margin: 0 auto;
+}
+.able-card h1{
+    font-size: 28px;
+    text-align: center;
+    margin-top: 12px;
+}
+.able-card .location{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+.able-card .location p, .able-card .website-link a{
+    margin: 0 0 0 10px;
+}
+.able-card .website-link{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+.able-card .website-link a{
+    color: var(--txt-black-color);
+}
+.able-card .posted2 p{
+    text-align: center;
+    margin: 12 0 0 0;
+}
+.able-card .btn{
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+}
+.able-card .able-card-line{
+    padding-top: 16px;
+    border-bottom: 1px solid #000000;
+}
+.able-card .return-job-page{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.able-card .return-job-page a{
+    color: var(--txt-black-color);
+    text-decoration: none;
+    margin-right: 10px;
+}
+.able-card .return-job-page i{
+    border: 1px solid #000000;
+    width: 19px;
+    height: 19px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width:768px){
+    .job-detail{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas: 
+        "job-info"
+        "able-card";
+        height: 2400px;
+    }
+    .job-info{
+        grid-area: job-info;
+        margin-top: 30px;
+    }
+    .btn-and-share{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "btn"
+        "share";
+    }
+    .btn-and-share .btn{
+        grid-area: btn;
+    }
+    .btn-and-share .share{
+        grid-area: share;
+    }
+    .able-card{
+        grid-area: able-card;
+        justify-self: center;
+        margin-top: 30px;
+    }
+}
