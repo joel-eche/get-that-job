@@ -90,11 +90,24 @@
         flex-direction: column;
     }
     .job-listing-search {
-        flex-direction: column;
+        /*flex-direction: column;*/
+        flex-wrap: wrap;    
     }
-    .job-listing-dropdown-menu-container, .job-listing-dropdown, 
-    .job-listing-dropdown-toggle, .job-listing-input-text {
+    .job-listing-sort .job-listing-dropdown, 
+    .job-listing-dropdown-toggle,
+    .job-listing-input-text {
         width: 100%;
-        margin: 5px 0px;
+        margin-bottom: 5px;
+        margin-right: 0px !important;
+    }
+    .job-listing-input-text{
+        width: 100%;
+    }
+    .job-listing-dropdown-menu-container {
+        width: 40%;
+    }
+    .job-listing-search .job-listing-dropdown {
+        width: 50%;
+        margin: 0px;
     }
 }
