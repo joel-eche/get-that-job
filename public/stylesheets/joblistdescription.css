@@ -1,14 +1,16 @@
 .job-list-description {
+  padding-top: 54px;
+  padding-bottom: 54px;
   background-color: var(--bg-blue-color);
   color: var(--txt-white-color);
-  height: 394px;
 }
 .job-list-description-info {
-  width: 507px;
+  width: 60%;
+  padding-right: 10%;
 }
 
 .job-list-description-small {
-  width: 447px;
+  width: 40%;
 }
 
 .job-list-description-info h2 {
@@ -24,11 +26,23 @@
 }
 
 .job-list-description-three {
-  height: 286px;
   width: 100%;
   justify-content: space-between;
 }
 
 .job-list-description .job-item-new {
   display: none;
+}
+
+@media screen and (max-width:768px){
+  .job-list-description {
+    flex-direction: column;
+  }
+  .job-list-description-info {
+    text-align: justify;
+    padding-right: 0px;
+  }
+  .job-list-description-info, .job-list-description-small {
+    width: 100%;
+  }
 }
