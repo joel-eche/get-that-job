@@ -1,3 +1,6 @@
+.job-listing-header {
+    padding-top: 5%;
+}
 .job-listing-header-title {
     font-weight: bold;
     font-size: 32px;
@@ -7,6 +10,7 @@
 
 .job-listing-filter {
     justify-content: space-between;
+    margin-bottom: 20px;
 }
 .job-listing-filter .job-listing-input-text, .job-listing-filter .job-listing-dropdown{
     margin-right: 10px;
@@ -90,7 +94,6 @@
         flex-direction: column;
     }
     .job-listing-search {
-        /*flex-direction: column;*/
         flex-wrap: wrap;    
     }
     .job-listing-sort .job-listing-dropdown, 
@@ -109,5 +112,9 @@
     .job-listing-search .job-listing-dropdown {
         width: 50%;
         margin: 0px;
+    }
+
+    .job-listing-sort .job-listing-dropdown-menu-container {
+        min-width: 80%;
     }
 }
