@@ -1,14 +1,16 @@
 .job-list-description {
+  padding-top: 54px;
+  padding-bottom: 54px;
   background-color: var(--bg-blue-color);
   color: var(--txt-white-color);
-  height: 394px;
 }
 .job-list-description-info {
-  width: 507px;
+  width: 60%;
+  padding-right: 10%;
 }
 
 .job-list-description-small {
-  width: 447px;
+  width: 40%;
 }
 
 .job-list-description-info h2 {
@@ -24,53 +26,23 @@
 }
 
 .job-list-description-three {
-  height: 286px;
   width: 100%;
   justify-content: space-between;
 }
 
-.job-item {
-  background-color: var(--bg-light-color);
-  width: auto;
-  height: 82px;
-
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 19px;
-
-  justify-content: space-between;
+.job-list-description .job-item-new {
+  display: none;
 }
 
-.job-item-image {
-  padding-left: 20px;
-}
-
-.job-item-info {
-  width: 210px;
-}
-
-.job-item-position {
-  color: var(--txt-gray-dark-color);
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 27px;
-}
-
-.job-item-able {
-  font-weight: bold;
-  color: var(--txt-black-color);
-  padding-right: 9px;
-}
-
-.job-item-reactjs {
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 16px;
-  background-color: #7972f6;
-  padding: 2px 5px;
-}
-
-.job-item-day {
-  color: var(--txt-gray-light-color);
-  padding-right: 20px;
+@media screen and (max-width:768px){
+  .job-list-description {
+    flex-direction: column;
+  }
+  .job-list-description-info {
+    text-align: justify;
+    padding-right: 0px;
+  }
+  .job-list-description-info, .job-list-description-small {
+    width: 100%;
+  }
 }

@@ -9,11 +9,13 @@
     --bg-light-color: #FFFFFF;
     --bg-gray-color: #E5E5E5;
     --bg-blue-color: #3C2DFF;
+    --bg-lightblue-color: #F7FAFC;
     --btn-undefined-color: #E5E5E5;
     --btn-primary-color: #3C2DFF;
     --btn-secondary-color: #000000;
     --txt-black-color: #000000;
     --txt-gray-dark-color: #4A5568;
+    --txt-gray-medium-color: #595959;
     --txt-gray-light-color: #718096;
     --txt-white-color: #FFFFFF;
     --txt-purple-color: #AD00FF;
@@ -35,6 +37,8 @@ body {
 .main {
     width: 100%;
     margin-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--bg-lightblue-color);
 }
 
 .flex {
@@ -81,6 +85,10 @@ body {
 
 .text-align-center {
     text-align: center;
+}
+.text-without-decoration {
+    color: inherit;
+    text-decoration: none;
 }
 .uppercase {
     text-transform: uppercase;

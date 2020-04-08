@@ -1,6 +1,7 @@
 .testimonials {
     padding-top: 5%;
     padding-bottom: 5%;
+    background-color: var(--bg-light-color);
 }
 .testimonial {
     padding-left: 8%;
