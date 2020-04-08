@@ -1,0 +1,100 @@
+.job-listing-header-title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    color: var(--txt-black-color);
+}
+
+.job-listing-filter {
+    justify-content: space-between;
+}
+.job-listing-filter .job-listing-input-text, .job-listing-filter .job-listing-dropdown{
+    margin-right: 10px;
+}
+
+.job-listing-input-text {
+    height: 40px;
+    padding-left: 13px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    background: var(--bg-light-color);
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--txt-gray-dark-color);
+}
+
+.job-listing-dropdown-toggle {
+    height: 40px;
+    border: none;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.06);
+    background: var(--bg-light-color);
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--txt-gray-dark-color);
+}
+.job-listing-dropdown-menu-container {
+    position: absolute;
+    display: none;
+    min-width: 103px;
+    margin-top: -10px;
+}
+.job-listing-dropdown-arrow-up {
+    display: none !important;
+}
+.job-listing-dropdown-arrow-down, .job-listing-dropdown-arrow-up {
+    margin-left: 22px;
+}
+.job-listing-dropdown:hover .job-listing-dropdown-arrow-down{
+    display: none !important;
+}
+.job-listing-dropdown:hover .job-listing-dropdown-arrow-up{
+    display: inline !important;
+}
+.job-listing-dropdown:hover .job-listing-dropdown-menu-container{
+    display: block;
+}
+
+.job-listing-dropdown-menu {
+    padding-left: 0px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    list-style: none;
+    background: var(--bg-light-color);
+}
+.job-listing-dropdown-item {
+    padding: 8px 12px;
+    font-weight: normal;
+    font-size: 14px;    
+    line-height: 22px;
+    color: var(--txt-gray-medium-color);
+}
+
+
+.job-listing-sort .job-listing-dropdown-toggle{
+    background: transparent;
+    box-shadow: none;
+}
+.job-listing-sort .job-listing-dropdown-menu-container {
+    min-width: 156px;
+    margin-top: -18px;
+}
+
+@media screen and (max-width:768px){
+    .job-listing-filter {
+        flex-direction: column;
+    }
+    .job-listing-search {
+        flex-direction: column;
+    }
+    .job-listing-dropdown-menu-container, .job-listing-dropdown, 
+    .job-listing-dropdown-toggle, .job-listing-input-text {
+        width: 100%;
+        margin: 5px 0px;
+    }
+}
