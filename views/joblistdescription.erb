@@ -1,6 +1,5 @@
 <section class="job-list-description container flex justify-between">
-  <div class="job-list-description-info flex align-items-center">
-    <div>
+  <div class="job-list-description-info flex justify-center direction-column">
       <h2>Find your next tech job</h2>
       <p>
         Our Machine learning algorithm is so good that it’s even illegal in some
@@ -12,11 +11,12 @@
         Is sending random memes through chat your only skill? That’s ok, we got
         you, our Rock Star Meme Curator role is here for you.
       </p>
-    </div>
   </div>
   <div class="job-list-description-small flex align-items-center">
     <div class="job-list-description-three flex direction-column">
-      <%= erb :jobitem %> <%= erb :jobitem %> <%= erb :jobitem %>
+      <% for i in 0..2 do %> 
+          <%= erb :jobitem %> 
+      <% end %>
     </div>
   </div>
 </section>
