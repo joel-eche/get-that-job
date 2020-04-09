@@ -1,5 +1,4 @@
 .signup-form{
-    margin-top: 200px;
     background-color: #f7fafc;
     padding-top: 64px;
     padding-bottom: 100px;
@@ -59,11 +58,9 @@
     background: radial-gradient(var(--bg-blue-color) 40%, white 50%);
     border:1px solid #3C2DFF;
 }
-.signup-options .option p{
+.signup-options .option .signup-options-text{
     margin-top: 0;
     color: #595959;
-    position: relative;
-    top:-2px;
 }
 .signup-options .option{
     display: flex;
@@ -108,11 +105,9 @@
 .checkbox-option, .checkbox-option1{
     display: flex;
 } 
-.checkbox-option p, .checkbox-option1 p{
+.checkbox-option .check-option-text, .checkbox-option1 .check-option-text{
     margin: 0 0 10px 4px;
     color: #595959;
-    position: relative;
-    top:-2px;
 }
 
 .create{
