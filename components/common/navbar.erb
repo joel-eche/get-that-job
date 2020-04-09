@@ -22,7 +22,33 @@
       </li>
     </ul>
   </nav>
+  <nav id="navbar-mobile" class="navbar-mobile menu-closed">
+    <header class="nav-brand-mobile container flex justify-between align-items-center">
+      <a href="/" class="navbar-brand text-without-decoration">
+        <img class="navbar-brand-logo" src="images/logo.png" />
+        <span>GetThatJob</span>
+      </a>
+      <i class="fas fa-times" onclick="closeMenuMobile()"></i>
+    </header>
+    <ul class="navbar-items flex direction-column align-items-center">
+      <li class="navbar-item">
+        <a href="/faq" class="navbar-link">Help</a>
+      </li>
+      <li class="navbar-item">
+        <a href="/companies" class="navbar-link">Companies</a>
+      </li>
+      <li class="navbar-item">
+        <a href="/jobs" class="navbar-link">Jobs</a>
+      </li>
+      <li class="navbar-item">
+        <a href="/login" class="btn-small btn-outline-primary uppercase">Sign in</a>
+      </li>
+      <li class="navbar-item">
+        <a href="/signup" class="btn-small btn-outline-secondary uppercase">Create an account</a>
+      </li>
+    </ul>
+  </nav>
   <div class="navbar-menu-icon">
-    <i class="fas fa-bars" onclick=""></i>
+    <i class="fas fa-bars" onclick="openMenuMobile()"></i>
   </div>
 </header>
