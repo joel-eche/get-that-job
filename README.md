@@ -1,9 +1,7 @@
 # Get That Job
 
 Group Members:
-Joel Eche
-Nicolle Quispe
-Humberto Delgado
+Joel Eche, Nicolle Quispe, Humberto Delgado
 
 ## App
 
