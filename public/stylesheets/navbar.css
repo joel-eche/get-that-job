@@ -42,6 +42,32 @@
     cursor: pointer;
 }
 
+/*MENU MOBILE*/
+.menu-opened{
+    display: inline-block;
+    opacity: 100%;
+}
+.menu-closed{
+    display: none;
+    opacity: 0%;
+}
+
+.navbar-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    background-color: var(--bg-light-color);
+}
+.nav-brand-mobile {
+    height: 100px;
+}
+.navbar-item {
+    margin: 20px;
+}
+
 @media screen and (max-width:768px){
     .navbar-collapse {
         display: none;
