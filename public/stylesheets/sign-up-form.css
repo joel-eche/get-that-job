@@ -1,0 +1,133 @@
+.signup-form{
+    background-color: #f7fafc;
+    padding-top: 64px;
+    padding-bottom: 100px;
+}
+.signup-form form input, .signup-form form textarea{
+    width: 400px;
+    border-radius: 4px;
+    border: 1px solid #D9D9D9;
+    font-size: 16px;
+    color: #595959;
+    font-family: 'Nunito';
+    padding:8px 12px;
+    margin-top: 5px;
+}
+.signup-form form textarea{
+    height: 127px;
+}
+.signup-form form .input{
+    height: 35px;
+}
+.signup-form form > label >p{
+    font-size: 14px;
+    color: #8C8C8C;
+    margin: 4px 0 12px 4px;
+    width: 400px;
+}
+.signup-form form label{
+    font-size: 14px;
+    color: #262626;
+    margin: 0 2px;
+}
+/*options*/
+
+/*radio option*/
+.radio-option{
+    width: 20px;
+    height: 20px;
+}
+.radio-option input[type=radio]{
+    display: none;
+}
+.radio-option input[type=radio]+label{
+    cursor: pointer;
+}
+.radio-option label::before{
+    content: '';
+    background:var(--bg-light-color);
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin: 0 auto;
+    display: inline-block;
+}
+.radio-option input[type=radio]:checked +label:before{
+    content:'';
+    background: radial-gradient(var(--bg-blue-color) 40%, white 50%);
+    border:1px solid #3C2DFF;
+}
+.signup-options .option .signup-options-text{
+    margin-top: 0;
+    color: #595959;
+}
+.signup-options .option{
+    display: flex;
+} 
+.signup-options{
+    margin-top: 6px;
+    display: grid;
+    grid-column-gap: 8px;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: 20px;
+    padding-top: 5px;
+}
+
+/*checkbox*/
+.check-option, .check-option1{
+    width: 20px;
+    height: 20px;
+}
+.check-option input[type=checkbox],.check-option1 input[type=checkbox]{
+    display: none;
+}
+.check-option input[type=checkbox]+label, .check-option1 input[type=checkbox]+label{
+    cursor: pointer;
+}
+.check-option label::before, .check-option1 label::before{
+    content: '';
+    font-size: 12px;
+    background:var(--bg-light-color);
+    border: 1px solid #D9D9D9;
+    border-radius: 20%;
+    height: 16px;
+    width: 16px;
+    margin: 0 auto;
+    display: inline-block;
+}
+.check-option input[type=checkbox]:checked +label:before,.check-option1 input[type=checkbox]:checked +label:before {
+    content:'✔';
+    background:var(--bg-light-color);
+    border:1px solid var(--bg-light-color);
+    font-size: 12px;
+}
+.checkbox-option, .checkbox-option1{
+    display: flex;
+} 
+.checkbox-option .check-option-text, .checkbox-option1 .check-option-text{
+    margin: 0 0 10px 4px;
+    color: #595959;
+}
+
+.create{
+    background-color: #ffffff;
+    border: 1px solid #3C2DFF;
+    padding: 8px 16px;
+    color: #3C2DFF;
+}
+
+@media screen and (max-width:768px){
+    .signup-form form input, .signup-form form textarea{
+        width: 100%;
+    }
+    .signup-form form > label >p{
+        width: 100%;
+    }
+    .signup-options{
+        grid-template-columns: repeat(2,100px);
+        grid-template-rows: repat(2,20px);
+        justify-content: space-around;
+        grid-row-gap: 10px;
+    }
+}
