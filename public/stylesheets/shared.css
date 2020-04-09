@@ -118,7 +118,6 @@
   text-decoration: none;
 }
 
-
 /* Jobs offers*/
 
 .job-item {
@@ -135,6 +134,11 @@
 .job-item-info {
   margin-left: 15px;
 }
+
+.job-item-flag {
+  padding-left: 9px;
+}
+
 .job-item-position {
   color: var(--txt-gray-dark-color);
   font-weight: 600;
@@ -171,7 +175,7 @@
   line-height: 14px;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .job-item {
     flex-direction: column;
     height: auto;
