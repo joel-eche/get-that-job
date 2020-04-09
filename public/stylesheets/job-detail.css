@@ -1,11 +1,9 @@
 .job-detail{
     background-color: #f7fafc;
-    margin-top: 20px;/*borrar*/
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 30px;
-    height: 1450px;
     grid-template-areas: 
     "job-info able-card";
 }
@@ -160,7 +158,7 @@ h2{
         grid-template-areas: 
         "job-info"
         "able-card";
-        height: 2400px;
+        height: 2250px;
     }
     .job-info{
         grid-area: job-info;
@@ -183,6 +181,22 @@ h2{
     .able-card{
         grid-area: able-card;
         justify-self: center;
-        margin-top: 30px;
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width:425px){
+    .job-detail{
+        height: 2550px;
+    }
+    .job-info .option ul .middle{
+        padding-top: 10px;
+    }
+}
+@media screen and (max-width:375px){
+    .job-detail{
+        height: 2850px;
+    }
+    .job-info .option ul .middle{
+        padding-top: 20px;
     }
 }
